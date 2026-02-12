@@ -94,3 +94,24 @@
     font-family: inherit;
     display: inline-block;
 }
+
+@media (max-width: 768px) {
+    .banner-wrapper {
+        height: 250px;
+        /* Slightly shorter on mobile */
+    }
+
+    .banner-title-animated {
+        font-size: 1.8rem;
+        /* Much smaller to fit */
+        letter-spacing: 0.05em;
+        text-align: center;
+        padding: 0 1rem;
+        /* Prevent edge touching */
+        line-height: 1.2;
+    }
+
+    .hook-title {
+        font-size: 2rem;
+    }
+}
