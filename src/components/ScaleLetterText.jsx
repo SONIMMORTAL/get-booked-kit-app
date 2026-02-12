@@ -52,7 +52,7 @@ const ScaleLetterText = ({
     return (
         <motion.div
             ref={ref}
-            style={{ display: "flex", overflow: "hidden" }}
+            style={{ display: "flex", overflow: "hidden", flexWrap: "wrap", justifyContent: "center" }}
             variants={container}
             initial="hidden"
             animate={controls}
