@@ -1,0 +1,63 @@
+.steps-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* Removing gap for connected look */
+    background-color: var(--color-bg-card);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+}
+
+/* Vertical line for timeline effect */
+.steps-container::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--spacing-xl) + 19px);
+    top: var(--spacing-xl);
+    bottom: var(--spacing-xl);
+    width: 1px;
+    background-color: var(--color-border);
+    z-index: 0;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    /* Align to top for better text flow */
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+    position: relative;
+    z-index: 1;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-bg-card);
+    border: 2px solid var(--color-accent-brown);
+    color: var(--color-accent-brown);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 8px var(--color-bg-card);
+    /* Spacing around circle */
+}
+
+.step-content p {
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    font-weight: 400;
+    margin-top: 6px;
+    /* Align with number */
+}

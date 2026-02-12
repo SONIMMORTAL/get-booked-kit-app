@@ -1,0 +1,130 @@
+.upsell-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.upsell-card {
+    background-color: var(--color-bg-card);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease;
+}
+
+.upsell-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.help-card {
+    background-color: transparent;
+    border: 1px solid var(--color-accent-brown);
+    text-align: center;
+    box-shadow: none;
+}
+
+.email-link {
+    color: var(--color-accent-brown);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+}
+
+.upsell-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--color-border);
+}
+
+.service-card.highlighted {
+    background-color: var(--color-bg-secondary);
+    border: none;
+}
+
+.upsell-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+}
+
+.icon-inline {
+    width: 24px;
+    height: 24px;
+    color: var(--color-accent-brown);
+}
+
+.service-card p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.service-details {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    padding-left: var(--spacing-md);
+    border-left: 2px solid var(--color-accent-brown);
+    font-style: italic;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 28px;
+    border-radius: 30px;
+    /* Pillow buttons */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-top: var(--spacing-lg);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.cta-button.primary {
+    background-color: var(--color-text-primary);
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background-color: var(--color-accent-brown);
+    transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--color-text-primary);
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}

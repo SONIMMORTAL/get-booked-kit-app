@@ -1,0 +1,96 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    align-items: center;
+}
+
+.banner-wrapper {
+    width: 100%;
+    height: 350px;
+    /* Taller banner for drama */
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    /* Key for overlay positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    /* Essential for stacking during fade */
+    top: 0;
+    left: 0;
+    filter: brightness(0.65);
+    /* Darkened for text legibility */
+}
+
+.banner-title-overlay {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.banner-title-animated {
+    color: #fff;
+    /* White text for contrast */
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.banner-wrapper:hover .banner-image {
+    transform: scale(1.05);
+    /* Subtle zoom effect */
+}
+
+.header-content {
+    padding: 0 var(--spacing-md);
+    text-align: center;
+    max-width: 800px;
+}
+
+.icon-wrapper {
+    display: none;
+    /* Removing the floating icon for a cleaner look */
+}
+
+/* Removed .main-title styles as they are replaced by .hook-title */
+
+.hook-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-lg);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight-text {
+    font-style: italic;
+    color: var(--color-accent-brown) !important;
+    font-weight: 400;
+}
+
+.highlight-text span {
+    font-family: inherit;
+    display: inline-block;
+}
