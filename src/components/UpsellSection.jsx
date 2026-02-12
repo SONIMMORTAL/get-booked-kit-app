@@ -16,8 +16,11 @@ const UpsellSection = () => {
                 {/* Visibility Verdict Intensive */}
                 <div className="upsell-card service-card">
                     <h3 className="upsell-title"><Star className="icon-inline" /> Ready for More Support?</h3>
-                    <p>The Starter Kit gives you the tools. But if you want strategic guidance and a custom roadmap built for YOUR business, check out <strong>The Visibility Verdict Intensive</strong>.</p>
-                    <p className="service-details">Two 90-minute strategy sessions + 30-90 personalized speaking opportunities + a custom visibility roadmap.</p>
+                    <p>The Get Booked Kit gives you the tools. But if you want strategic guidance and a custom roadmap built for YOUR business, check out <strong>90-day Speaker Intensive</strong>.</p>
+                    <div className="service-details">
+                        <p>✓ A custom 90-day visibility roadmap that tells you exactly what to do, when to do it, and why it matters</p>
+                        <p>✓ 30-50 personalized speaking opportunities delivered — researched and ready to pitch</p>
+                    </div>
                     <a href="https://overwhelmedtoorganizedva.com/90-day-speaker-intensive" target="_blank" rel="noopener noreferrer" className="cta-button primary">
                         Learn More <ArrowRight className="w-4 h-4" />
                     </a>
