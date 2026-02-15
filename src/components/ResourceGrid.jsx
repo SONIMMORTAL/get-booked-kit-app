@@ -11,7 +11,7 @@ const resources = [
     },
     {
         title: "The Speaker’s Vault",
-        description: "60+ speaking opportunities across industries; including conferences, panels, summits, and podcasts (updated monthly)",
+        description: "90+ speaking opportunities across industries; including conferences, panels, summits, and podcasts (updated monthly)",
         image: "/resource_speaker_vault_1770926546548.png",
         link: "https://docs.google.com/spreadsheets/d/1xhnDaJKMEVLjU6UIClVramVQSPtXaZMR/edit?usp=sharing&ouid=112033106492854075084&rtpof=true&sd=true"
     },
